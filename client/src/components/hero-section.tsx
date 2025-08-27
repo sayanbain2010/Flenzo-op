@@ -3,9 +3,8 @@ import { Button } from "@/components/ui/button";
 import flenzoLogo from "@assets/e0b1db8bc8343ce736c4f871b6225069_1756259193247.png";
 
 const statistics = [
-  { value: "2.8K", label: "Servers" },
-  { value: "485K", label: "Users" },
-  { value: "1.2M", label: "Commands Used" },
+  { value: "270+", label: "Servers" },
+  { value: "250k+", label: "Users" },
   { value: "24/7", label: "Uptime" }
 ];
 

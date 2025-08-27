@@ -17,7 +17,7 @@ export default function FinalCtaSection() {
             <Button 
               className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-bold text-lg sm:text-xl transition-all hover-glow flex items-center justify-center group" 
               data-testid="button-add-to-discord-final"
-              onClick={() => window.open('https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&permissions=8&scope=bot%20applications.commands', '_blank')}
+              onClick={() => window.open('https://discord.com/api/oauth2/authorize?client_id=998547879201349693&permissions=8&scope=bot%20applications.commands', '_blank')}
             >
               <i className="fab fa-discord mr-3 sm:mr-4 text-xl sm:text-2xl group-hover:scale-110 transition-transform"></i>
               Add to Discord Now
@@ -25,7 +25,7 @@ export default function FinalCtaSection() {
             <Button 
               className="w-full sm:w-auto bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-bold text-lg sm:text-xl transition-all hover-glow flex items-center justify-center group" 
               data-testid="button-join-community"
-              onClick={() => window.open('https://discord.gg/flenzo-community', '_blank')}
+              onClick={() => window.open('https://discord.gg/C86nD33WBr', '_blank')}
             >
               <i className="fas fa-users mr-3 sm:mr-4 text-lg sm:text-xl group-hover:scale-110 transition-transform"></i>
               Join Community

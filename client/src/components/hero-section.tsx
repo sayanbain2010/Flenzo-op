@@ -39,7 +39,7 @@ export default function HeroSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 pulse-animation">
             <i className="fas fa-star mr-2"></i>
-            <span data-testid="text-promo-banner">Limited Time: Free Premium for First 500 Users!</span>
+            <span data-testid="text-promo-banner">Join Support Server To Get Free No Prefix!!</span>
           </div>
           
           <div className="flex items-center justify-center mb-8">
@@ -60,7 +60,7 @@ export default function HeroSection() {
             <Button 
               className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all hover-glow flex items-center justify-center" 
               data-testid="button-add-to-discord"
-              onClick={() => window.open('https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&permissions=8&scope=bot%20applications.commands', '_blank')}
+              onClick={() => window.open('https://discord.com/api/oauth2/authorize?client_id=998547879201349693&permissions=8&scope=bot%20applications.commands', '_blank')}
             >
               <i className="fab fa-discord mr-3 text-lg sm:text-xl"></i>
               Add to Discord
@@ -68,7 +68,7 @@ export default function HeroSection() {
             <Button 
               className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all hover-glow flex items-center justify-center" 
               data-testid="button-go-premium"
-              onClick={() => window.open('https://discord.gg/flenzo-premium', '_blank')}
+              onClick={() => window.open('https://discord.gg/C86nD33WBr', '_blank')}
             >
               <i className="fas fa-crown mr-3"></i>
               Go Premium

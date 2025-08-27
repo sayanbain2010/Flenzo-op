@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(234, 47%, 7%);
+  --foreground: hsl(240, 5%, 96%);
+  --card: hsl(234, 47%, 11%);
+  --card-foreground: hsl(240, 5%, 96%);
+  --popover: hsl(234, 47%, 11%);
+  --popover-foreground: hsl(240, 5%, 96%);
+  --primary: hsl(45, 93%, 58%);
+  --primary-foreground: hsl(234, 47%, 7%);
+  --secondary: hsl(234, 47%, 15%);
+  --secondary-foreground: hsl(240, 5%, 96%);
+  --muted: hsl(234, 47%, 15%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --accent: hsl(217, 91%, 60%);
+  --accent-foreground: hsl(240, 5%, 96%);
+  --destructive: hsl(0, 62%, 50%);
+  --destructive-foreground: hsl(240, 5%, 96%);
+  --border: hsl(234, 47%, 20%);
+  --input: hsl(234, 47%, 15%);
+  --ring: hsl(45, 93%, 58%);
+  --chart-1: hsl(203.8863, 88.2845%, 53.1373%);
+  --chart-2: hsl(159.7826, 100%, 36.0784%);
+  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
+  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
+  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
+  --sidebar: hsl(234, 47%, 11%);
+  --sidebar-foreground: hsl(240, 5%, 96%);
+  --sidebar-primary: hsl(45, 93%, 58%);
+  --sidebar-primary-foreground: hsl(234, 47%, 7%);
+  --sidebar-accent: hsl(234, 47%, 15%);
+  --sidebar-accent-foreground: hsl(45, 93%, 58%);
+  --sidebar-border: hsl(234, 47%, 20%);
+  --sidebar-ring: hsl(45, 93%, 58%);
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(234, 47%, 7%);
+  --foreground: hsl(240, 5%, 96%);
+  --card: hsl(234, 47%, 11%);
+  --card-foreground: hsl(240, 5%, 96%);
+  --popover: hsl(234, 47%, 11%);
+  --popover-foreground: hsl(240, 5%, 96%);
+  --primary: hsl(45, 93%, 58%);
+  --primary-foreground: hsl(234, 47%, 7%);
+  --secondary: hsl(234, 47%, 15%);
+  --secondary-foreground: hsl(240, 5%, 96%);
+  --muted: hsl(234, 47%, 15%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --accent: hsl(217, 91%, 60%);
+  --accent-foreground: hsl(240, 5%, 96%);
+  --destructive: hsl(0, 62%, 50%);
+  --destructive-foreground: hsl(240, 5%, 96%);
+  --border: hsl(234, 47%, 20%);
+  --input: hsl(234, 47%, 15%);
+  --ring: hsl(45, 93%, 58%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(234, 47%, 7%) 0%, hsl(234, 47%, 11%) 50%, hsl(234, 47%, 7%) 100%);
+  }
+
+  .hero-gradient {
+    background: radial-gradient(ellipse at center, hsl(217, 91%, 60%, 0.15) 0%, transparent 70%),
+                linear-gradient(135deg, hsl(234, 47%, 7%) 0%, hsl(234, 47%, 9%) 100%);
+  }
+
+  .card-gradient {
+    background: linear-gradient(135deg, hsl(234, 47%, 11%) 0%, hsl(234, 47%, 13%) 100%);
+    border: 1px solid hsl(234, 47%, 20%);
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 30px hsl(45, 93%, 58%, 0.3);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 40px hsl(45, 93%, 58%, 0.4);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+  }
+
+  .discord-embed {
+    background: linear-gradient(135deg, hsl(235, 86%, 65%) 0%, hsl(217, 91%, 60%) 100%);
+    border-left: 4px solid hsl(45, 93%, 58%);
+  }
+
+  .pulse-animation {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+}
